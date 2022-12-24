@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #ffffff;
+  --bg-url: url(./assets/bg-mobile-dark.jpg)
+}
+
+.theme-light{
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-Light.jpg)
+}
+
 body * {
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 body {
@@ -16,7 +26,7 @@ body {
   **background-position: top center;
   **background-size: cover; 
   **/
-  background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 #container {
@@ -74,7 +84,7 @@ ul li a {
 
 ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid var(--text-color);
 }
 
 /** Social Links **/
